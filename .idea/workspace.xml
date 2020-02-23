@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="28f33adb-ffd8-4bc8-ace0-461a80d3a834" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YCGNr9qkh0ElBX6tNQYAlWGEoH" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main.kotlin.models.SplitBill" type="JetRunConfigurationType" factoryName="Kotlin">
+      <module name="SplitBill.main" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="main.kotlin.models.SplitBill" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="28f33adb-ffd8-4bc8-ace0-461a80d3a834" name="Default Changelist" comment="" />
+      <created>1582439125515</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582439125515</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="504" y="340" width="800" height="677" key="#Project_Structure" timestamp="1582439348576">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="504" y="340" width="800" height="677" key="#Project_Structure/71.27.1849.1053@71.27.1849.1053" timestamp="1582439348576" />
+    <state x="606" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582440477217">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="606" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1582440477217" />
+    <state x="631" y="422" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1582440422700">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="631" y="422" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1582440422700" />
+    <state x="677" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1582439129608">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state x="677" y="407" key="com.intellij.ide.util.TipDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1582439129608" />
+  </component>
+</project>
