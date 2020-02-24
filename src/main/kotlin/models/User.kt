@@ -4,17 +4,18 @@ import main.kotlin.models.models.Bill
 
 class User (UId: Int, firstName: String, email: String, private var paid: Double, owes: Double) {
 
-    private var owes: Double = 0.0
-    private var firstName: String = firstName
-    private var UId: Int = UId
-    private var email: String = email
+   private var owes: Double = 0.0
+    var firstName: String = firstName
+    var UId: Int = UId
+    var email: String = email
 
     set(value){ field= value}
-
+    val list= mutableListOf("alice", "bob", "janice")
+    var bill= Bill("lunch", list, 3000.0, "alice" )
 
     init {
 
-        if (Bill.listOfPeople.contains(firstName)) this.owes = Bill.amount / Bill.listOfPeople.size
+        if (bill.listOfPeople.contains(firstName)) this.owes = bill.amount / bill.listOfPeople.size
 
     }
 
@@ -35,10 +36,12 @@ class User (UId: Int, firstName: String, email: String, private var paid: Double
         }
     }
     fun setEmail(id:Int, email:String) {
-        val user=getUser(id)
-        user.email=email
-        return user
+//        val user=getUser(id)
+//        user.email=email
+        this.email=email
     }
+
+
 }
 
 

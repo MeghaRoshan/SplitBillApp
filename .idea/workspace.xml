@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28f33adb-ffd8-4bc8-ace0-461a80d3a834" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/UserTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/SplitBill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/SplitBill.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" afterDir="false" />
     </list>
@@ -70,10 +78,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="398" y="203" width="800" height="677" key="#Project_Structure" timestamp="1582511882846">
+    <state x="398" y="203" width="800" height="677" key="#Project_Structure" timestamp="1582523819365">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state x="398" y="203" width="800" height="677" key="#Project_Structure/71.27.1849.1053@71.27.1849.1053" timestamp="1582511882846" />
+    <state x="398" y="203" width="800" height="677" key="#Project_Structure/71.27.1849.1053@71.27.1849.1053" timestamp="1582523819365" />
     <state x="606" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582440477217">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
@@ -82,6 +90,22 @@
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="631" y="422" width="525" height="428" key="#com.intellij.ide.util.TreeClassChooserDialog/71.27.1849.1053@71.27.1849.1053" timestamp="1582440422700" />
+    <state width="1803" height="187" key="GridCell.Tab.0.bottom" timestamp="1582528334188">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state width="1803" height="187" key="GridCell.Tab.0.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1582528334188" />
+    <state width="1803" height="187" key="GridCell.Tab.0.center" timestamp="1582528334187">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state width="1803" height="187" key="GridCell.Tab.0.center/71.27.1849.1053@71.27.1849.1053" timestamp="1582528334187" />
+    <state width="1803" height="187" key="GridCell.Tab.0.left" timestamp="1582528334186">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state width="1803" height="187" key="GridCell.Tab.0.left/71.27.1849.1053@71.27.1849.1053" timestamp="1582528334185" />
+    <state width="1803" height="187" key="GridCell.Tab.0.right" timestamp="1582528334188">
+      <screen x="71" y="27" width="1849" height="1053" />
+    </state>
+    <state width="1803" height="187" key="GridCell.Tab.0.right/71.27.1849.1053@71.27.1849.1053" timestamp="1582528334188" />
     <state x="677" y="407" key="com.intellij.ide.util.TipDialog" timestamp="1582439129608">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
