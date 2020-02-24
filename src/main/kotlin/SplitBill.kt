@@ -1,6 +1,7 @@
 package main.kotlin.models
 
 import main.kotlin.models.models.Bill
+import main.kotlin.models.models.numOfPeople
 import models.User
 
 class SplitBill {
@@ -15,10 +16,13 @@ class SplitBill {
 
               return bill }
             getBill()
-            /*fun splitexpense(){
-                  
-            }*/
 
+            fun splitExpense(){
+                val amt=bill.amount/ numOfPeople +1
+                for( i in list) {
+                    User.setOwes(amt)
+                }}
+            splitExpense()
 
         }
     }
