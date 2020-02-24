@@ -34,8 +34,10 @@ class User (UId: Int, firstName: String, email: String, private var paid: Double
 
         }
     }
-    fun setEmail(id:Int, email:String){
-        if(id==UId) {User.setEmail(email)}
+    fun setEmail(id:Int, email:String) {
+        val user=getUser(id)
+        user.email=email
+        return user
     }
 }
 

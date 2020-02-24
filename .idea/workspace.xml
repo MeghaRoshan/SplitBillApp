@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28f33adb-ffd8-4bc8-ace0-461a80d3a834" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/models/groupSettlement.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" afterDir="false" />
@@ -72,10 +70,10 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="504" y="340" width="800" height="677" key="#Project_Structure" timestamp="1582439348576">
+    <state x="398" y="203" width="800" height="677" key="#Project_Structure" timestamp="1582511882846">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state x="504" y="340" width="800" height="677" key="#Project_Structure/71.27.1849.1053@71.27.1849.1053" timestamp="1582439348576" />
+    <state x="398" y="203" width="800" height="677" key="#Project_Structure/71.27.1849.1053@71.27.1849.1053" timestamp="1582511882846" />
     <state x="606" y="96" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1582440477217">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
