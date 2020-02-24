@@ -1,18 +1,18 @@
 package models
 
-import main.kotlin.models.SplitBill
 import main.kotlin.models.models.Bill
 import main.kotlin.models.models.numOfPeople
 
-class User (UId: Int, firstName: String, email: String, private var paid: Double, owes: Double) {
+class User (UId: Int, firstName: String, email: String,paid: Double, owes: Double) {
 
-   private var owes: Double = 0.0
+    private var paid: Double
+   private var owes: Double
     var firstName: String
     var UId: Int
     var email: String = ""
         set(value){ field= value}
     val list= mutableListOf("alice", "bob", "janice")
-    var bill= Bill("lunch", list, 3000.0, "alice" )
+//    var bill= Bill("lunch", list, 3000.0, "alice" )
 
     init {
         this.firstName=firstName
@@ -20,6 +20,7 @@ class User (UId: Int, firstName: String, email: String, private var paid: Double
         this.email=email
 //        if (bill.listOfPeople.contains(firstName)) this.owes = bill.amount / bill.listOfPeople.size
         this.owes=owes
+        this.paid=paid
 
     }
 
@@ -45,14 +46,6 @@ class User (UId: Int, firstName: String, email: String, private var paid: Double
 //        user.email=email
         this.email=email
     }
-    val User= User(1, "alice", "megharoshan21@gmail.com" , 3000.0, 0.0)
-
-    fun splitExpense(){
-        val amt= bill.amount/ numOfPeople +1
-        for( i in list) {
-            setOwes(amt)
-        }}
-
 
     }
 
