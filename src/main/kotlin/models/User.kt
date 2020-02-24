@@ -1,5 +1,6 @@
 package models
 
+import main.kotlin.models.SplitBill
 import main.kotlin.models.models.Bill
 import main.kotlin.models.models.numOfPeople
 
@@ -44,6 +45,13 @@ class User (UId: Int, firstName: String, email: String, private var paid: Double
 //        user.email=email
         this.email=email
     }
+    val User= User(1, "alice", "megharoshan21@gmail.com" , 3000.0, 0.0)
+
+    fun splitExpense(){
+        val amt= bill.amount/ numOfPeople +1
+        for( i in list) {
+            setOwes(amt)
+        }}
 
 
     }
