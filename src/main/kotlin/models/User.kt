@@ -1,20 +1,46 @@
 package models
 
-class User (firstName: String, lastName:String, paid: Double, owes: Double){
+import main.kotlin.models.models.Bill
 
-    private var owes: Double
-    private var paid: Double
-    private var firstName: String
-    private var lastName: String
-   init{
-       this.firstName=firstName
-       this.lastName=lastName
-       this.paid=paid
-       this.owes=owes
-   }
+class User (UId: Int, firstName: String, email: String, private var paid: Double, owes: Double) {
 
-    fun getPaid(): Double{ return this.paid; }
-    fun getOwes():Double{return this.owes; }
-    fun setOwes(owes: Double):Double{ this.owes = owes;}
+    private var owes: Double = 0.0
+    private var firstName: String = firstName
+    private var UId: Int = UId
+    private var email: String = email
 
+    set(value){ field= value}
+
+
+    init {
+
+        if (Bill.listOfPeople.contains(firstName)) this.owes = Bill.amount / Bill.listOfPeople.size
+
+    }
+
+    fun getPaid(): Double {
+        return this.paid; }
+
+    fun getOwes(): Double {
+        return owes; }
+
+    fun setOwes(owes: Double) {
+        this.owes = owes
+    }
+
+    fun getUser(id: Int) {
+        if (id == UId) {
+            println("The User is $firstName with email $email with following account: paid: $paid , owes: $owes")
+
+        }
+    }
+    fun setEmail(id:Int, email:String){
+        if(id==UId) {User.setEmail(email)}
+    }
 }
+
+
+
+/* assign values as val user = User(1, Megha, megharoshan21@gmail.com, 2000, 0)
+ change values through set method
+ */
