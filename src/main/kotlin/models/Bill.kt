@@ -1,15 +1,12 @@
 package main.kotlin.models.models
 
-import main.kotlin.models.SplitBill
+import models.User
 
 data class Bill (
+    val billId: Int,
     val billName: String,
-    val listOfPeople: MutableList<String> = mutableListOf<String>(),
+    val listOfPeople: MutableList<User> = mutableListOf(),
     val amount : Double,
-    val payee: String
-
+    val payee: User
 )
-val listOfPeople= mutableListOf("alice", "bob", "janice")
-val numOfPeople: Int= listOfPeople.size
-
 
