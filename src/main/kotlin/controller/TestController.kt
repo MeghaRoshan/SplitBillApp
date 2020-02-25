@@ -14,19 +14,22 @@ class TestController {
     var user1= createUser(User(1, "alice","aliceroshan@gmail.com"))
     var user2= createUser(User(2, "bob","bobroshan@gmail.com"))
 
-
     @GET
     @Path("/getUserList")
     fun getUserList(): MutableList<User> {
         return userFunctions.getUserList()
     }
 
+
+
     @POST
     @Path("/createUser")
-    fun createUser(user:User):String{
+    fun createUser(user:User): MutableList<User>{
         userFunctions.addUser(user)
-        return "User successfully created"
+        return userFunctions.getUserList()
     }
+
+
 
     @PUT
     @Path("/user")
@@ -37,35 +40,49 @@ class TestController {
         return userFunctions.getUserList()
     }
 
+//
+//    val list= getUserList()
+//    val user3= User(4, "maria","mariaroshan@gmail.com")
+//    var bill= Bill(1, "lunch", list,amount= 400.0, payee= user3)
     @GET
     @Path("/getBillsList")
     fun getBillsList(): MutableList<Bill> {
         return userFunctions.getBillsList()
     }
 
-    val list= getUserList()
-    val user3= User(4, "maria","mariaroshan@gmail.com")
-    var bill= Bill(1, "lunch", list,amount= 400.0, payee= user3)
+//    val list= getUserList()
+
+//    var bill= Bill(1, "lunch", list,amount= 400.0, payee= user3)
+
+
     @POST
     @Path("/createBill")
-    fun addBill(){
+    fun addBill(bill: Bill): MutableList<Bill> {
         userFunctions.addBill(bill)
+        return userFunctions.getBillsList()
     }
+
 
     @PUT
-    @Path("/{billId}/{amount}")
-    fun updateBill(@PathParam("billId") billId:Int,
-                    @PathParam("amount") amount:Double,
-                    bill: Bill){
+    @Path("/bills")
+    fun updateBill(@QueryParam("billId") billId:Int,
+                    @QueryParam("amount") amount:Double,
+                    bill: Bill): MutableList<Bill> {
         userFunctions.updateBill(billId, amount)
+        return userFunctions.getBillsList()
     }
 
+
    @DELETE
-   @Path("/deleteBill/{billId}")
-   fun deleteBill(@PathParam("billId") billId: Int, bill:Bill){
+   @Path("/deleteBill")
+   fun deleteBill(@QueryParam("billId") billId: Int, bill:Bill){
        userFunctions.deleteBill(billId)
+
    }
+
+
     var user=User(3, "janice", "janiceroshan@gmail.com")
+    val user3= User(4, "maria","mariaroshan@gmail.com")
     @GET
     @Path("/settlePayment/{amount}")
     fun settlePayment(@PathParam("amount") amount: Double){

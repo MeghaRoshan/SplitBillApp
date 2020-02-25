@@ -13,11 +13,13 @@ class UserFunctions {
 
     // region user and bill
 
-    fun getUserList() = userList
+
 
     fun addUser(user: User) {
         userList.add(user)
     }
+
+    fun getUserList() = userList
 
     fun getUser(userId: Int): User? = userList.first {
         it.userId == userId
@@ -57,8 +59,8 @@ class UserFunctions {
         getUser(userId)?.let{user -> user.email=email}
     }
 
-    fun updateBill(billId:Int,amount: Double ){
-        getBill(billId)?.let{bill: Bill -> bill.amount=amount }
+    fun updateBill(billId: Int,amount: Double ){
+        getBill(billId)?.let{bill -> bill.amount=amount }
     }
 
     fun deleteBill(billId: Int){

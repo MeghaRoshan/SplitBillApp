@@ -7,13 +7,13 @@ public final class UserFunctions {
     private final java.util.List<models.User> userList = null;
     private final java.util.List<main.kotlin.models.models.Bill> billsList = null;
     
+    public final void addUser(@org.jetbrains.annotations.NotNull()
+    models.User user) {
+    }
+    
     @org.jetbrains.annotations.NotNull()
     public final java.util.List<models.User> getUserList() {
         return null;
-    }
-    
-    public final void addUser(@org.jetbrains.annotations.NotNull()
-    models.User user) {
     }
     
     @org.jetbrains.annotations.Nullable()
