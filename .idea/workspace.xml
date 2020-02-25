@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="28f33adb-ffd8-4bc8-ace0-461a80d3a834" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/controller/TestController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controller/TestController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/UserFunctions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/UserFunctions.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

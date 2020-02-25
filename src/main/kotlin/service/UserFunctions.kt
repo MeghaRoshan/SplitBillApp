@@ -53,6 +53,21 @@ class UserFunctions {
     fun getBill(billId: Int):Bill? = billsList.first {
         it.billId == billId
     }
+    fun updateEmail(userId: Int, email:String){
+        getUser(userId)?.let{user -> user.email=email}
+    }
+
+    fun updateBill(billId:Int,amount: Double ){
+        getBill(billId)?.let{bill: Bill -> bill.amount=amount }
+    }
+
+    fun deleteBill(billId: Int){
+        billsList.remove(getBill(billId))
+    }
+
+    fun deleteUser(userId:Int){
+        userList.remove(getUser(userId))
+    }
 
     // endregion
 

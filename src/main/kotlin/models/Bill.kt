@@ -6,7 +6,7 @@ data class Bill (
     val billId: Int,
     val billName: String,
     val listOfPeople: MutableList<User> = mutableListOf(),
-    val amount : Double,
+    var amount : Double,
     val payee: User
 )
 
