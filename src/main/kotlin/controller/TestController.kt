@@ -11,15 +11,15 @@ import javax.ws.rs.core.MediaType
 @Produces(MediaType.APPLICATION_JSON)
 class TestController {
     val userFunctions = UserFunctions()
-    private var userList = mutableListOf<User>()
-    val user1= userFunctions.createUser(1, "alice","aliceroshan@gmail.com")
-    val user2= userFunctions.createUser(2, "bob","bobroshan@gmail.com")
+//    private var userList = mutableListOf<User>()
+    val user1= User(1, "alice","aliceroshan@gmail.com")
+    val user2= User(2, "bob","bobroshan@gmail.com")
 
 
 //    @GET
-//    @Path("/{uId}")
-//    fun getUser(@PathParam("uId") uId: Int):User? {
-//        return userList[uId]
+//    @Path("/{userId}")
+//    fun getUser(@PathParam("userId") userId: Int):User? {
+//        return userList[userId]
 //    }
 
     @GET
@@ -37,7 +37,7 @@ class TestController {
     }
 
     @PUT
-    @Path("/{userId}/{email}")
+    @Path("/user/{userId}/{email}")
     fun updateEmail(@PathParam("email") email:String,
                     @PathParam("userId") userId:Int,
                     user:User){
@@ -79,7 +79,7 @@ class TestController {
         userFunctions.settlePayment(user, user3, amount)
     }
 
-    
+
 
 //    @PUT
 //    @Path("/{userId}")

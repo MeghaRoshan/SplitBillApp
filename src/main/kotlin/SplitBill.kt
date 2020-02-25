@@ -23,8 +23,8 @@ class SplitBill : Application<AppConfig>() {
         log.info("app started")
 
         val testController = TestController()
-        environment?.jersey()?.register(testController)
-        environment?.objectMapper?.registerModule(KotlinModule())
+        environment!!.jersey().register(testController)
+        environment.objectMapper.registerModule(KotlinModule())
     }
 }
 

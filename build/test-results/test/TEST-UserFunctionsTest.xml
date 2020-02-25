@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="UserFunctionsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-24T19:50:13" hostname="LAP-LIN-1142" time="0.003">
+<testsuite name="UserFunctionsTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2020-02-25T03:58:13" hostname="LAP-LIN-1142" time="0.017">
   <properties/>
-  <testcase name="test user creation" classname="UserFunctionsTest" time="0.003"/>
-  <testcase name="test bill creation" classname="UserFunctionsTest" time="0.0"/>
+  <testcase name="test user creation" classname="UserFunctionsTest" time="0.006"/>
+  <testcase name="test bill creation" classname="UserFunctionsTest" time="0.011"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
