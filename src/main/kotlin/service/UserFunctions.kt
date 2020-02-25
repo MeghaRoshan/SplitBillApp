@@ -2,7 +2,7 @@ package main.kotlin.models.service
 
 import models.User
 import main.kotlin.models.models.Bill
-import javax.xml.bind.JAXBElement
+
 
 
 class UserFunctions {
