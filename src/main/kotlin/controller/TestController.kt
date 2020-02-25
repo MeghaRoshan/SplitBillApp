@@ -11,16 +11,9 @@ import javax.ws.rs.core.MediaType
 @Produces(MediaType.APPLICATION_JSON)
 class TestController {
     val userFunctions = UserFunctions()
-//    private var userList = mutableListOf<User>()
-    val user1= User(1, "alice","aliceroshan@gmail.com")
-    val user2= User(2, "bob","bobroshan@gmail.com")
+    val user1= createUser(User(1, "alice","aliceroshan@gmail.com"))
+    val user2= createUser(User(2, "bob","bobroshan@gmail.com"))
 
-
-//    @GET
-//    @Path("/{userId}")
-//    fun getUser(@PathParam("userId") userId: Int):User? {
-//        return userList[userId]
-//    }
 
     @GET
     @Path("/getUserList")
@@ -28,7 +21,7 @@ class TestController {
         return userFunctions.getUserList()
     }
 
-    var user=User(3, "janice", "janiceroshan@gmail.comk")
+    var user=User(3, "janice", "janiceroshan@gmail.com")
     @POST
     @Path("/createUser")
     fun createUser(user:User):String{
@@ -78,22 +71,5 @@ class TestController {
     fun settlePayment(@PathParam("amount") amount: Double){
         userFunctions.settlePayment(user, user3, amount)
     }
-
-
-
-//    @PUT
-//    @Path("/{userId}")
-//    fun updateUser(@PathParam("userId") userId:Int , user:User){
-//        userList -= userId
-//        userList +=user.userId to user
-//    }
-
-//    @POST
-//    @Path("add/{id}/{name}/{email}")
-//    fun createUser(@PathParam("id" ) id:Int, @PathParam("name") name:String, @PathParam("email") email:String):User{
-//        return User(id, name, email)
-//    }
-
-
 }
 
