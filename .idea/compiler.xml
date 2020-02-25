@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/io.ebean/querybean-generator/12.1.10/517e68ccf2c1fa3186121de475fc8c173b1537a3/querybean-generator-12.1.10.jar" />
+        </processorPath>
+        <module name="SplitBill.main" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

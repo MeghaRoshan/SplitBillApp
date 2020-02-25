@@ -55,12 +55,6 @@ class UserFunctionsTest {
     @Test
     fun `test create user route`(){
         val testController = TestController()
-        assertTrue(testController.getBillsList().isEmpty())
-        val testUser = User(1, "Megha", "megha@awesome.com")
-        testController.createUser(testUser)
-        assertEquals(1, testController.getUserList().size)
-
-
-
+        assertEquals(2, testController.getUserList().size)
     }
 }
