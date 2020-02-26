@@ -6,6 +6,7 @@ import io.ebean.typequery.TQAssocBean;
 import io.ebean.typequery.TQProperty;
 import io.ebean.typequery.TypeQueryBean;
 import javax.annotation.Generated;
+import main.kotlin.models.models.query.assoc.QAssocBill;
 import models.User;
 import models.query.QUser;
 
@@ -21,6 +22,7 @@ class QAssocUser<R> : TQAssocBean<User,R> {
   lateinit var userId: PInteger<R>
   lateinit var firstName: PString<R>
   lateinit var email: PString<R>
+  lateinit var bill: QAssocBill<R>
 
   /**
    * Eagerly fetch this association loading the specified properties.

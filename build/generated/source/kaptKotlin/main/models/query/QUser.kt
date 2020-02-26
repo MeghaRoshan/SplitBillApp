@@ -8,6 +8,7 @@ import io.ebean.typequery.PString;
 import io.ebean.typequery.TQRootBean;
 import io.ebean.typequery.TypeQueryBean;
 import javax.annotation.Generated;
+import main.kotlin.models.models.query.assoc.QAssocBill;
 import models.User;
 
 /**
@@ -37,6 +38,7 @@ class QUser : TQRootBean<User, QUser> {
   lateinit var userId: PInteger<QUser>
   lateinit var firstName: PString<QUser>
   lateinit var email: PString<QUser>
+  lateinit var bill: QAssocBill<QUser>
 
 
   /**

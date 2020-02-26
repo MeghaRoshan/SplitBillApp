@@ -11,8 +11,8 @@ import javax.ws.rs.core.MediaType
 @Produces(MediaType.APPLICATION_JSON)
 class UserController(val userServices: UserServices) {
 //    val userServices = UserServices()
-    var user1= createUser(User(1, "alice","aliceroshan@gmail.com"))
-    var user2= createUser(User(2, "bob","bobroshan@gmail.com"))
+    //var user1= createUser(User(1, "alice","aliceroshan@gmail.com"))
+    //var user2= createUser(User(2, "bob","bobroshan@gmail.com"))
 
     @GET
     @Path("/getUserList")
@@ -38,12 +38,12 @@ class UserController(val userServices: UserServices) {
         return userServices.getUserList()
     }
 
-    var user=User(3, "janice", "janiceroshan@gmail.com")
-    val user3= User(4, "maria","mariaroshan@gmail.com")
+    //var user=User(3, "janice", "janiceroshan@gmail.com")
+    //val user3= User(4, "maria","mariaroshan@gmail.com")
     @GET
     @Path("/settlePayment/{amount}")
     fun settlePayment(@PathParam("amount") amount: Double){
-        userServices.settlePayment(user, user3, amount)
+        //userServices.settlePayment(user, user3, amount)
     }
 //
 //    val list= getUserList()

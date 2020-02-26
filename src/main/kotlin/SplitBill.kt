@@ -5,7 +5,7 @@ import dao.UserDao
 import io.dropwizard.Application
 import io.dropwizard.setup.Environment
 import io.ebean.DB
-import main.kotlin.models.Dao.BillDao
+import dao.BillDao
 import main.kotlin.models.config.AppConfig
 import main.kotlin.models.controller.BillController
 import main.kotlin.models.controller.UserController

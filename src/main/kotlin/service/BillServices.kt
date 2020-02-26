@@ -1,7 +1,6 @@
 package main.kotlin.models.service
 
-import dao.UserDao
-import main.kotlin.models.Dao.BillDao
+import dao.BillDao
 import main.kotlin.models.models.Bill
 import models.User
 
@@ -17,9 +16,11 @@ class BillServices(var billDao: BillDao) {
     ) {
         addBill(Bill(billId, billName, listOfPeople, amount, payee))
     }
-    fun addBill(bill: Bill) {
-        billsList.add(bill)
+    fun addBill(bill: Bill):Bill {
+        //billsList.add(bill)
+
         splitExpense(bill)
+        return billDao.addBill(bill)
     }
 
     fun getBillsList() = billsList

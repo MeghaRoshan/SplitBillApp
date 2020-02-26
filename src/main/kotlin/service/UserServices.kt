@@ -5,7 +5,6 @@ import models.User
 import main.kotlin.models.models.Bill
 
 
-
 class UserServices(var userDao: UserDao) {
 
     private val userList = mutableListOf<User>()
@@ -15,10 +14,9 @@ class UserServices(var userDao: UserDao) {
     // region user and bill
 
 
-
-    fun addUser(user: User):User {
+    fun addUser(user: User): User {
 //        userList.add(user)
-            return userDao.userDaoAdd(user)
+        return userDao.userDaoAdd(user)
     }
 
     fun getUserList() = userList
@@ -38,14 +36,13 @@ class UserServices(var userDao: UserDao) {
     }
 
 
-
-
-    fun updateEmail(userId: Int, email:String){
-        getUser(userId)?.let{user -> user.email=email}
+    fun updateEmail(userId: Int, email: String) {
+        //getUser(userId)?.let{user -> user.email=email }
+        userDao.updateUserEmail(userId, email)
     }
 
 
-    fun deleteUser(userId:Int){
+    fun deleteUser(userId: Int) {
         userList.remove(getUser(userId))
     }
 
