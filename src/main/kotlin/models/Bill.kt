@@ -10,11 +10,11 @@ data class Bill (
     val billId: Int,
     @Column
     val billName: String,
-    @OneToMany(cascade = arrayOf(CascadeType.ALL))
+//    @OneToMany(cascade = arrayOf(CascadeType.ALL))
     val listOfPeople: MutableList<User> = mutableListOf(),
     @Column
     var amount : Double,
-    @OneToOne(cascade = arrayOf(CascadeType.ALL))
+    @OneToOne
     val payee: User
 ): Model()
 

@@ -1,4 +1,4 @@
-import main.kotlin.models.controller.TestController
+import main.kotlin.models.controller.UserController
 import main.kotlin.models.models.Bill
 import main.kotlin.models.service.UserServices
 
@@ -55,7 +55,7 @@ class UserServicesTest {
     }
     @Test
     fun `test create user route`(){
-        val testController = TestController()
+        val testController = UserController()
         assertEquals(2, testController.getUserList().size)
     }
 }

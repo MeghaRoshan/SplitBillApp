@@ -9,7 +9,6 @@ create table bills_table (
 
 create table users_table (
   user_id                       serial not null,
-  bill_bill_id                  integer not null,
   first_name                    varchar(100) not null,
   email                         varchar(255) not null,
   constraint uq_users_table_email unique (email),
@@ -17,7 +16,4 @@ create table users_table (
 );
 
 alter table bills_table add constraint fk_bills_table_payee_user_id foreign key (payee_user_id) references users_table (user_id) on delete restrict on update restrict;
-
-create index ix_users_table_bill_bill_id on users_table (bill_bill_id);
-alter table users_table add constraint fk_users_table_bill_bill_id foreign key (bill_bill_id) references bills_table (bill_id) on delete restrict on update restrict;
 

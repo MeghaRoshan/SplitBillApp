@@ -7,7 +7,10 @@ import io.dropwizard.setup.Environment
 import io.ebean.DB
 import main.kotlin.models.Dao.BillDao
 import main.kotlin.models.config.AppConfig
-import main.kotlin.models.controller.TestController
+import main.kotlin.models.controller.BillController
+import main.kotlin.models.controller.UserController
+import main.kotlin.models.service.BillServices
+import main.kotlin.models.service.UserServices
 import org.slf4j.LoggerFactory
 
 
@@ -25,16 +28,21 @@ class SplitBill : Application<AppConfig>() {
     override fun run(configuration: AppConfig?, environment: Environment?) {
         log.info("app started")
 
-        val testController = TestController()
-        environment!!.jersey().register(testController)
-        environment.objectMapper.registerModule(KotlinModule())
         val database = DB.getDefault()
 
         val userDao = UserDao(database)
         val billsDao = BillDao(database)
-//        val database = User()
-//        val userDao = UserDao(database)
-//        val billsDao = BillDao(userDao)
+
+        val userServices = UserServices(userDao)
+        val billServices = BillServices(billsDao)
+
+        val billController = BillController(billServices)
+        val userController = UserController(userServices)
+        environment!!.jersey().register(userController)
+        environment.jersey().register(billController)
+        environment.objectMapper.registerModule(KotlinModule())
+
+
     }
 }
 
