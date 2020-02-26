@@ -1,7 +1,7 @@
 package main.kotlin.models.controller
 
 import main.kotlin.models.models.Bill
-import main.kotlin.models.service.UserFunctions
+import main.kotlin.models.service.UserServices
 import models.User
 import javax.ws.rs.*
 import javax.ws.rs.core.MediaType
@@ -10,14 +10,14 @@ import javax.ws.rs.core.MediaType
 @Path("/User")
 @Produces(MediaType.APPLICATION_JSON)
 class TestController {
-    val userFunctions = UserFunctions()
+    val userServices = UserServices()
     var user1= createUser(User(1, "alice","aliceroshan@gmail.com"))
     var user2= createUser(User(2, "bob","bobroshan@gmail.com"))
 
     @GET
     @Path("/getUserList")
     fun getUserList(): MutableList<User> {
-        return userFunctions.getUserList()
+        return userServices.getUserList()
     }
 
 
@@ -25,8 +25,9 @@ class TestController {
     @POST
     @Path("/createUser")
     fun createUser(user:User): MutableList<User>{
-        userFunctions.addUser(user)
-        return userFunctions.getUserList()
+        userServices.addUser(user)
+
+        return userServices.getUserList()
     }
 
 
@@ -36,8 +37,8 @@ class TestController {
     fun updateEmail(@QueryParam("userId") userId:Int,
                     @QueryParam("email") email:String,
                     user:User): MutableList<User> {
-        userFunctions.updateEmail(userId, email)
-        return userFunctions.getUserList()
+        userServices.updateEmail(userId, email)
+        return userServices.getUserList()
     }
 
 //
@@ -47,7 +48,7 @@ class TestController {
     @GET
     @Path("/getBillsList")
     fun getBillsList(): MutableList<Bill> {
-        return userFunctions.getBillsList()
+        return userServices.getBillsList()
     }
 
 //    val list= getUserList()
@@ -58,8 +59,8 @@ class TestController {
     @POST
     @Path("/createBill")
     fun addBill(bill: Bill): MutableList<Bill> {
-        userFunctions.addBill(bill)
-        return userFunctions.getBillsList()
+        userServices.addBill(bill)
+        return userServices.getBillsList()
     }
 
 
@@ -68,15 +69,15 @@ class TestController {
     fun updateBill(@QueryParam("billId") billId:Int,
                     @QueryParam("amount") amount:Double,
                     bill: Bill): MutableList<Bill> {
-        userFunctions.updateBill(billId, amount)
-        return userFunctions.getBillsList()
+        userServices.updateBill(billId, amount)
+        return userServices.getBillsList()
     }
 
 
    @DELETE
    @Path("/deleteBill")
    fun deleteBill(@QueryParam("billId") billId: Int, bill:Bill){
-       userFunctions.deleteBill(billId)
+       userServices.deleteBill(billId)
 
    }
 
@@ -86,7 +87,7 @@ class TestController {
     @GET
     @Path("/settlePayment/{amount}")
     fun settlePayment(@PathParam("amount") amount: Double){
-        userFunctions.settlePayment(user, user3, amount)
+        userServices.settlePayment(user, user3, amount)
     }
 }
 

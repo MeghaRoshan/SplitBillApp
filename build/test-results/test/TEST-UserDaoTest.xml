@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="UserDaoTest" tests="1" skipped="0" failures="1" errors="0" timestamp="2020-02-26T11:13:07" hostname="LAP-LIN-1142" time="0.81">
+  <properties/>
+  <testcase name="insert_update_delete" classname="UserDaoTest" time="0.81">
+    <failure message="javax.persistence.PersistenceException: Error inserting bean [class models.User] with unidirectional relationship. For inserts you must use cascade save on the master bean [class main.kotlin.models.models.Bill]." type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Error inserting bean [class models.User] with unidirectional relationship. For inserts you must use cascade save on the master bean [class main.kotlin.models.models.Bill].
+	at io.ebeaninternal.server.persist.dmlbind.BindableUnidirectional.dmlBind(BindableUnidirectional.java:70)
+	at io.ebeaninternal.server.persist.dml.InsertMeta.bind(InsertMeta.java:134)
+	at io.ebeaninternal.server.persist.dml.InsertHandler.bind(InsertHandler.java:99)
+	at io.ebeaninternal.server.persist.dml.DmlBeanPersister.execute(DmlBeanPersister.java:67)
+	at io.ebeaninternal.server.persist.dml.DmlBeanPersister.insert(DmlBeanPersister.java:49)
+	at io.ebeaninternal.server.core.PersistRequestBean.executeInsert(PersistRequestBean.java:1260)
+	at io.ebeaninternal.server.core.PersistRequestBean.executeNow(PersistRequestBean.java:786)
+	at io.ebeaninternal.server.core.PersistRequestBean.executeNoBatch(PersistRequestBean.java:841)
+	at io.ebeaninternal.server.core.PersistRequestBean.executeOrQueue(PersistRequestBean.java:832)
+	at io.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:519)
+	at io.ebeaninternal.server.persist.DefaultPersister.insert(DefaultPersister.java:467)
+	at io.ebeaninternal.server.persist.DefaultPersister.save(DefaultPersister.java:450)
+	at io.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1753)
+	at io.ebeaninternal.server.core.DefaultServer.save(DefaultServer.java:1745)
+	at io.ebean.DB.save(DB.java:344)
+	at UserDaoTest.insert_update_delete(UserDaoTest.kt:9)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:50)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:47)
+	at org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)
+	at org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:325)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:78)
+	at org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:57)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.runTestClass(JUnitTestClassExecutor.java:110)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:58)
+	at org.gradle.api.internal.tasks.testing.junit.JUnitTestClassExecutor.execute(JUnitTestClassExecutor.java:38)
+	at org.gradle.api.internal.tasks.testing.junit.AbstractJUnitTestClassProcessor.processTestClass(AbstractJUnitTestClassProcessor.java:62)
+	at org.gradle.api.internal.tasks.testing.SuiteTestClassProcessor.processTestClass(SuiteTestClassProcessor.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.dispatch.ContextClassLoaderDispatch.dispatch(ContextClassLoaderDispatch.java:32)
+	at org.gradle.internal.dispatch.ProxyDispatchAdapter$DispatchingInvocationHandler.invoke(ProxyDispatchAdapter.java:93)
+	at com.sun.proxy.$Proxy2.processTestClass(Unknown Source)
+	at org.gradle.api.internal.tasks.testing.worker.TestWorker.processTestClass(TestWorker.java:118)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:35)
+	at org.gradle.internal.dispatch.ReflectionDispatch.dispatch(ReflectionDispatch.java:24)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:175)
+	at org.gradle.internal.remote.internal.hub.MessageHubBackedObjectConnection$DispatchWrapper.dispatch(MessageHubBackedObjectConnection.java:157)
+	at org.gradle.internal.remote.internal.hub.MessageHub$Handler.run(MessageHub.java:404)
+	at org.gradle.internal.concurrent.ExecutorPolicy$CatchAndRecordFailures.onExecute(ExecutorPolicy.java:63)
+	at org.gradle.internal.concurrent.ManagedExecutorImpl$1.run(ManagedExecutorImpl.java:46)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.gradle.internal.concurrent.ThreadFactoryImpl$ManagedThreadRunnable.run(ThreadFactoryImpl.java:55)
+	at java.lang.Thread.run(Thread.java:748)
+</failure>
+  </testcase>
+  <system-out><![CDATA[16:43:07.276 [Test worker] INFO io.ebean.EbeanVersion - ebean version: 12.1.10
+16:43:07.327 [Test worker] INFO io.ebean.config.properties.LoadContext - loaded properties from [file:application.yml]
+16:43:07.328 [Test worker] DEBUG io.ebean.Ebean - defaultName:db
+16:43:07.346 [Test worker] DEBUG io.ebean.test.config.AutoConfigureForTesting - automatic testing config - with ebean.test.platform:null environment db:null name:db
+16:43:07.356 [Test worker] DEBUG io.ebean.test.config.provider.ProviderAutoConfig - for testing - using FixedEncryptKeyManager() keyVal:simple0123456789
+16:43:07.357 [Test worker] INFO io.ebean.test.config.provider.ProviderAutoConfig - for testing purposes a current user and tenant provider has been configured. Use io.ebean.test.UserContext to set current user and tenant in tests.
+16:43:07.367 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - determining location urls for classpath: using ClassLoader sun.misc.Launcher$AppClassLoader@6bc7c054 ...
+16:43:07.368 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning URL: file:/home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/test/
+16:43:07.371 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/test/
+16:43:07.371 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/test ()
+16:43:07.372 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/test/META-INF ()
+16:43:07.372 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning URL: file:/home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/test/
+16:43:07.373 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/test/
+16:43:07.373 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/test ()
+16:43:07.373 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning URL: file:/home/megha_roshan/IdeaProjects/SplitBill/build/classes/java/main/
+16:43:07.373 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/java/main/
+16:43:07.373 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/java/main ()
+16:43:07.374 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/java/main/models ()
+16:43:07.374 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning URL: file:/home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/
+16:43:07.374 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/
+16:43:07.374 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/dao ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/Dao ()
+16:43:07.375 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/service ()
+16:43:07.376 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/controller ()
+16:43:07.376 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/config ()
+16:43:07.376 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/models ()
+16:43:07.377 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/models/query ()
+16:43:07.377 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/main/kotlin/models/models/query/assoc ()
+16:43:07.377 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/META-INF ()
+16:43:07.378 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/models ()
+16:43:07.378 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/models/query ()
+16:43:07.378 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/classes/kotlin/main/models/query/assoc ()
+16:43:07.379 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning URL: file:/home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/main/
+16:43:07.379 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning starting at classpath root in filesystem: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/main/
+16:43:07.380 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/main ()
+16:43:07.380 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/main/META-INF ()
+16:43:07.380 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.FileSystemClassPathLocationScanner - Scanning for resources in path: /home/megha_roshan/IdeaProjects/SplitBill/build/tmp/kapt3/classes/main/META-INF/services ()
+16:43:07.381 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - scanning for classes at classpath: found 19 resources to check
+16:43:07.418 [Test worker] DEBUG io.ebeaninternal.server.core.bootup.BootupClassPathSearch - Classpath search entities[2] searchTime[52] in packages[[]]
+16:43:07.435 [Test worker] INFO io.ebean.datasource.pool.ConnectionPool - DataSourcePool [db] autoCommit[false] transIsolation[READ_COMMITTED] min[2] max[200]
+16:43:07.529 [Test worker] INFO io.ebean.internal.DefaultContainer - DatabasePlatform name:db platform:postgres
+16:43:07.661 [Test worker] DEBUG io.ebeaninternal.server.type.DefaultTypeManager - Registering java.time data types
+16:43:07.671 [Test worker] DEBUG io.ebeaninternal.server.type.DefaultTypeManager - Registering Joda data types
+16:43:07.692 [Test worker] DEBUG io.ebeaninternal.server.core.InternalConfigXmlRead - Classpath search mappings[0] searchTime[0]
+16:43:07.709 [Test worker] DEBUG io.ebeaninternal.server.deploy.BeanDescriptorManager - BeanPersistControllers[0] BeanFinders[0] BeanPersistListeners[0] BeanQueryAdapters[0] BeanPostLoaders[0] BeanPostConstructors[0]
+16:43:07.792 [Test worker] DEBUG io.ebeaninternal.server.deploy.BeanDescriptorManager - Entities[2]
+16:43:07.981 [Test worker] INFO io.ebean.DDL - Executing db-drop-all.sql - 5 statements
+16:43:07.981 [Test worker] DEBUG io.ebean.DDL - executing 1 of 5 alter table if exists bills_table drop constraint if exists fk_bills_table_payee...
+16:43:07.984 [Test worker] DEBUG io.ebean.DDL - executing 2 of 5 alter table if exists users_table drop constraint if exists fk_users_table_bill_...
+16:43:07.986 [Test worker] DEBUG io.ebean.DDL - executing 3 of 5 drop index if exists ix_users_table_bill_bill_id
+16:43:07.987 [Test worker] DEBUG io.ebean.DDL - executing 4 of 5 drop table if exists bills_table cascade
+16:43:07.989 [Test worker] DEBUG io.ebean.DDL - executing 5 of 5 drop table if exists users_table cascade
+16:43:07.991 [Test worker] INFO io.ebean.DDL - Executing db-create-all.sql - 5 statements
+16:43:07.992 [Test worker] DEBUG io.ebean.DDL - executing 1 of 5 create table bills_table (   bill_id                       serial not null,   bi...
+16:43:08.002 [Test worker] DEBUG io.ebean.DDL - executing 2 of 5 create table users_table (   user_id                       serial not null,   bi...
+16:43:08.008 [Test worker] DEBUG io.ebean.DDL - executing 3 of 5 alter table bills_table add constraint fk_bills_table_payee_user_id foreign key...
+16:43:08.012 [Test worker] DEBUG io.ebean.DDL - executing 4 of 5 create index ix_users_table_bill_bill_id on users_table (bill_bill_id)
+16:43:08.016 [Test worker] DEBUG io.ebean.DDL - executing 5 of 5 alter table users_table add constraint fk_users_table_bill_bill_id foreign key (...
+16:43:08.026 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - determining location urls for classpath:dbmigration using ClassLoader sun.misc.Launcher$AppClassLoader@6bc7c054 ...
+16:43:08.027 [Test worker] DEBUG io.avaje.classpath.scanner.internal.scanner.classpath.ClassPathScanner - Unable to resolve location classpath:dbmigration
+16:43:08.027 [Test worker] DEBUG io.ebean.migration.runner.LocalMigrationResources - resources: []
+16:43:08.028 [Test worker] DEBUG io.ebean.migration.MigrationRunner - no migrations to check
+16:43:08.028 [Test worker] DEBUG io.ebeaninternal.dbmigration.DbOffline - reset
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

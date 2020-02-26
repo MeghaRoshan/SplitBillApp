@@ -1,0 +1,19 @@
+ebean:
+  dbSchema: megha # use this schema rather than public
+  ddl:
+    generate: true
+    run: true
+  #  initSql: test-init.sql
+  #  seedSql: test-seed.sql
+  migration:
+    run: true       # run database migrations on startup
+
+datasource:
+  db:
+    username: hasher
+    password: password
+    url: jdbc:postgresql://localhost:5432/splitbill
+    driver: org.postgresql.Driver
+
+  ## Expects system properties to be set for:
+  ## myPassword and myDatabaseHost

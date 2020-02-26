@@ -1,0 +1,4 @@
+generated-by: Ebean kotlin-querybean-generator
+entity-packages: main.kotlin.models.models
+  models
+
