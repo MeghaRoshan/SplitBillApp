@@ -17,7 +17,7 @@ class BillController(val billServices: BillServices) {
     }
     @POST
     @Path("/createBill")
-    fun addBill(bill: Bill): MutableList<Bill> {
+    open fun addBill(bill: Bill): MutableList<Bill> {
         billServices.addBill(bill)
         return billServices.getBillsList()
     }

@@ -5,14 +5,14 @@ import main.kotlin.models.service.UserServices
 import models.User
 import models.query.QUser
 
-class UserDao(var database: Database) {
+open class UserDao(var database: Database) {
 
-    fun userDaoAdd(user: User): User {
+    open fun userDaoAdd(user: User): User {
         database.save(user)
         return user
     }
 
-    fun updateUserEmail(userId: Int, email: String) {
+    open fun updateUserEmail(userId: Int, email: String) {
         val rows = QUser()
             .userId.eq(userId)
             .asUpdate()
@@ -20,7 +20,7 @@ class UserDao(var database: Database) {
             .update()
     }
 
-    fun removeUser(userId: Int) {
+    open fun removeUser(userId: Int) {
         val row = QUser()
             .userId.eq(userId)
         database.delete(row)

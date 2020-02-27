@@ -18,7 +18,7 @@ class BillServices(var billDao: BillDao) {
     ) {
         addBill(Bill(billId, billName, listOfPeople, amount, payee))
     }
-    fun addBill(bill: Bill):Bill {
+    open fun addBill(bill: Bill):Bill {
         billsList.add(bill)
 
         splitExpense(bill)

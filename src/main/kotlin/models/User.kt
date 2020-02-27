@@ -1,7 +1,9 @@
 package models
 
+import com.fasterxml.jackson.annotation.JsonSubTypes
 import io.ebean.Model
 import io.ebean.annotation.Length
+import io.ebean.typequery.TypeQueryBean
 import main.kotlin.models.models.Bill
 import javax.persistence.*
 
@@ -12,13 +14,22 @@ data class User(
     var userId: Int,
     @Length(100) var firstName: String,
     @Column(unique = true) var email: String,
-
-    var paid: HashMap<Int, Double> = hashMapOf(),
-    var owes: HashMap<Int, Double> = hashMapOf(),
+//    @MapKeyColumn
+//    var paid: HashMap<Int, Double> = hashMapOf(),
+//    @MapKeyColumn
+//    var owes: HashMap<Int, Double> = hashMapOf(),
     @ManyToOne
     @JoinColumn(name="billId")
     var bill: Bill? = null
 
 
 
-) : Model()
+) : Model(){
+
+//    lateinit var paid: HashMap<Int, Double>
+        @Column
+        var paid: HashMap<Int, Double> = hashMapOf()
+        @Column
+        var owes: HashMap<Int, Double> = hashMapOf()
+
+}

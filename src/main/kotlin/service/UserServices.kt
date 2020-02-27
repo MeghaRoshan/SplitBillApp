@@ -5,7 +5,7 @@ import models.User
 import main.kotlin.models.models.Bill
 
 
-class UserServices(var userDao: UserDao) {
+open class UserServices(var userDao: UserDao) {
 
     private val userList = mutableListOf<User>()
 

@@ -9,11 +9,11 @@ import models.query.QUser
 
 class BillDao(var database: Database) {
 
-    fun addBill(bill: Bill):Bill{
+    open fun addBill(bill: Bill):Bill{
         database.save(bill)
         return bill
     }
-    fun updateBillAmount(billId: Int, amount: Double) {
+    open fun updateBillAmount(billId: Int, amount: Double) {
         val rows = QBill()
             .billId.eq(billId)
             .asUpdate()
@@ -21,14 +21,14 @@ class BillDao(var database: Database) {
             .update()
     }
 
-    fun removeBill(billId: Int) {
+    open fun removeBill(billId: Int) {
         val row = QBill()
             .billId.eq(billId)
         database.delete(row)
 
     }
 
-    fun updateBillUser(billId:Int, user: User){
+    open fun updateBillUser(billId:Int, user: User){
 
          var list =QBill().billId.equalTo(billId).findOne()
         if (list != null) {
@@ -36,7 +36,7 @@ class BillDao(var database: Database) {
         }
             database.update(list)
     }
-    fun undoDeleteBill(bill: Bill){
+    open fun undoDeleteBill(bill: Bill){
         database.save(bill)
     }
 

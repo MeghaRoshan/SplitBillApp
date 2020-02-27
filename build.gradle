@@ -69,7 +69,6 @@ ebean {
 test {
     testLogging.showStandardStreams = true
     useJUnitPlatform()
-
 }
 dockerCompose {
     useComposeFiles = ['database/docker-compose.yml']
