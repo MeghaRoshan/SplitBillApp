@@ -18,6 +18,9 @@ data class Bill (
     val payee: User
 
 
-): Model()
+): Model(){
+
+    var status: Boolean = true
+}
 
 

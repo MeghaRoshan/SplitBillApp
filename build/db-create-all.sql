@@ -2,7 +2,7 @@ create table bills_table (
   bill_id                       serial not null,
   bill_name                     varchar(255) not null,
   amount                        float not null,
-  payee_user_id                 integer,
+  payee_user_id                 integer not null,
   constraint uq_bills_table_payee_user_id unique (payee_user_id),
   constraint pk_bills_table primary key (bill_id)
 );

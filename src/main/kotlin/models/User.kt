@@ -12,6 +12,7 @@ data class User(
     var userId: Int,
     @Length(100) var firstName: String,
     @Column(unique = true) var email: String,
+
     var paid: HashMap<Int, Double> = hashMapOf(),
     var owes: HashMap<Int, Double> = hashMapOf(),
     @ManyToOne

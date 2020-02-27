@@ -5,8 +5,8 @@ ebean:
     run: true
   #  initSql: test-init.sql
   #  seedSql: test-seed.sql
-  migration:
-    run: true       # run database migrations on startup
+#  migration:
+#    run: true       # run database migrations on startup
 
 datasource:
   db:

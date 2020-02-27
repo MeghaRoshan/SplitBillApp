@@ -30,12 +30,24 @@ class BillController(val billServices: BillServices) {
         return billServices.getBillsList()
     }
 
+    @PUT
+    @Path("/addUserToBill")
+    fun updateBillUser(@QueryParam("billId") billId:Int,
+                       user:User){
+        billServices.updateBillUser(billId, user)
+    }
 
     @DELETE
     @Path("/deleteBill")
     fun deleteBill(@QueryParam("billId") billId: Int, bill:Bill){
         billServices.deleteBill(billId)
 
+    }
+
+    @POST
+    @Path("/undoDeleteBill")
+    fun undoDelBill(@QueryParam("billId") billId: Int){
+        billServices.undoDelBill(billId)
     }
 
 
