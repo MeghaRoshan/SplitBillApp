@@ -14,10 +14,10 @@ data class User(
     var userId: Int,
     @Length(100) var firstName: String,
     @Column(unique = true) var email: String,
-//    @MapKeyColumn
-//    var paid: HashMap<Int, Double> = hashMapOf(),
-//    @MapKeyColumn
-//    var owes: HashMap<Int, Double> = hashMapOf(),
+    @MapKeyColumn
+    var paid: HashMap<Int, Double> = hashMapOf(),
+    @MapKeyColumn
+    var owes: HashMap<Int, Double> = hashMapOf(),
     @ManyToOne
     @JoinColumn(name="billId")
     var bill: Bill? = null
@@ -25,11 +25,12 @@ data class User(
 
 
 ) : Model(){
-
-//    lateinit var paid: HashMap<Int, Double>
-        @Column
-        var paid: HashMap<Int, Double> = hashMapOf()
-        @Column
-        var owes: HashMap<Int, Double> = hashMapOf()
+    //paid and owes are updates in the HashMap but are not visible in the database table.
+//        @Column
+//        lateinit var paid: String
+////        HashMap<Int, Double> = hashMapOf()
+//        @Column
+//        lateinit var owes: String
+//        HashMap<Int, Double> = hashMapOf()
 
 }
