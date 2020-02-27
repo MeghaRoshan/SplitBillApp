@@ -3,7 +3,6 @@ package models.query;
 import io.ebean.Database;
 import io.ebean.FetchGroup;
 import io.ebean.Query;
-import io.ebean.typequery.PDouble;
 import io.ebean.typequery.PInteger;
 import io.ebean.typequery.PString;
 import io.ebean.typequery.TQRootBean;
@@ -39,8 +38,6 @@ class QUser : TQRootBean<User, QUser> {
   lateinit var userId: PInteger<QUser>
   lateinit var firstName: PString<QUser>
   lateinit var email: PString<QUser>
-  lateinit var Paid: PDouble<QUser>
-  lateinit var Owes: PDouble<QUser>
   lateinit var bill: QAssocBill<QUser>
 
 

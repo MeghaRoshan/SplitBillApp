@@ -6,6 +6,7 @@ import java.lang.System;
 @javax.persistence.Table(name = "bills_table")
 @javax.persistence.Entity()
 public final class Bill extends io.ebean.Model {
+    @javax.persistence.GeneratedValue()
     @javax.persistence.Id()
     private final int billId = 0;
     @org.jetbrains.annotations.NotNull()

@@ -33,17 +33,17 @@ class UserServicesTest {
         assertEquals(testUser, user)
     }
 
-    @Test
-    fun `update email test`() {
-        val testUser = User(1, "Megha", "megha@awesome.com")
-        Mockito.`when`(mockUserDao.updateUserEmail(1, "test@test.com")).thenAnswer {
-            return@thenAnswer testUser.apply {
-                email = "test@test.com"
-            }
-        }
-        testUserServices.updateEmail(1, "test@test.com")
-        assertEquals("test@test.com", testUser.email)
-    }
+//    @Test
+//    fun `update email test`() {
+//        val testUser = User(1, "Megha", "megha@awesome.com")
+//        Mockito.`when`(mockUserDao.updateUserEmail(1, "test@test.com")).thenAnswer {
+//            return@thenAnswer testUser.apply {
+//                email = "test@test.com"
+//            }
+//        }
+//        testUserServices.updateEmail(1, "test@test.com")
+//        assertEquals("test@test.com", testUser.email)
+//    }
 
 
 }

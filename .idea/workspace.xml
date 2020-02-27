@@ -11,13 +11,17 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/jarAnalysis.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/models/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/models/Bill.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/service/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/main/kotlin/models/service/UserServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/QUser$Companion.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/QUser$Companion.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/QUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/QUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/assoc/QAssocUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/main/models/query/assoc/QAssocUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/kotlin/test/UserServicesTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/kotlin/test/UserServicesTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/db-create-all.sql" beforeDir="false" afterPath="$PROJECT_DIR$/build/db-create-all.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/source/kaptKotlin/main/models/query/QUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/kaptKotlin/main/models/query/QUser.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/generated/source/kaptKotlin/main/models/query/assoc/QAssocUser.kt" beforeDir="false" afterPath="$PROJECT_DIR$/build/generated/source/kaptKotlin/main/models/query/assoc/QAssocUser.kt" afterDir="false" />
@@ -29,7 +33,9 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/proto.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/jvm/kotlin/subtypes.tab" afterDir="false" />
@@ -54,6 +60,29 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileKotlin/last-build.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/class-fq-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/internal-name-to-source.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/proto.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/jvm/kotlin/source-to-classes.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/counters.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/file-to-id.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.keystream.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.len" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.len" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/id-to-file.tab_i" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/compileTestKotlin/last-build.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/build-history.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/inputs/source-to-output.tab" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/inputs/source-to-output.tab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/inputs/source-to-output.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/inputs/source-to-output.tab.values.at" afterDir="false" />
@@ -85,12 +114,15 @@
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/lookups/lookups.tab.values.at" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/lookups/lookups.tab.values.at" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/lookups/lookups.tab_i" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/caches-jvm/lookups/lookups.tab_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/last-build.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsKotlin/last-build.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/controller/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/controller/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsTestKotlin/build-history.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/kotlin/kaptGenerateStubsTestKotlin/build-history.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/models/Bill.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/models/Bill.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/service/UserServices.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/main/kotlin/models/service/UserServices.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/User.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/query/QUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/query/QUser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/query/assoc/QAssocUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/incrementalData/main/models/query/assoc/QAssocUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/controller/UserController.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/controller/UserController.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/models/Bill.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/models/Bill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/models/Bill.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/models/Bill.kapt_metadata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/service/UserServices.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/service/UserServices.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/service/UserServices.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/main/kotlin/models/service/UserServices.kapt_metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/User.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/User.kapt_metadata" afterDir="false" />
@@ -98,10 +130,11 @@
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/QUser.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/QUser.kapt_metadata" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/assoc/QAssocUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/assoc/QAssocUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/assoc/QAssocUser.kapt_metadata" beforeDir="false" afterPath="$PROJECT_DIR$/build/tmp/kapt3/stubs/main/models/query/assoc/QAssocUser.kapt_metadata" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/controller/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/controller/UserController.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Paid.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/Bill.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/models/User.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/service/UserServices.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/service/UserServices.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/Test.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/kotlin/UserServicesTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/kotlin/UserServicesTest.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,6 +152,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand />
@@ -161,7 +197,7 @@
       <recent name="$PROJECT_DIR$/database" />
     </key>
   </component>
-  <component name="RunManager" selected="Kotlin.main.kotlin.models.SplitBill">
+  <component name="RunManager" selected="Gradle.UserServicesTest">
     <configuration name="BillServicesTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -202,12 +238,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="Tests in 'SplitBill.test'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;UserDaoTest&quot;" />
+        <option name="scriptParameters" value="--tests *" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -222,12 +258,12 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="UserDaoTest.insert_update_delete" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="UserDaoTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;UserDaoTest.insert_update_delete&quot;" />
+        <option name="scriptParameters" value="--tests &quot;UserDaoTest&quot;" />
         <option name="taskDescriptions">
           <list />
         </option>
@@ -277,19 +313,19 @@
     </configuration>
     <list>
       <item itemvalue="Kotlin.main.kotlin.models.SplitBill" />
-      <item itemvalue="Gradle.UserDaoTest.insert_update_delete" />
       <item itemvalue="Gradle.UserDaoTest" />
       <item itemvalue="Gradle.UserServicesTest" />
       <item itemvalue="Gradle.BillServicesTest" />
       <item itemvalue="Gradle.Test" />
+      <item itemvalue="Gradle.Tests in 'SplitBill.test'" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.BillServicesTest" />
-        <item itemvalue="Gradle.Test" />
         <item itemvalue="Gradle.UserServicesTest" />
+        <item itemvalue="Gradle.Tests in 'SplitBill.test'" />
+        <item itemvalue="Gradle.Test" />
+        <item itemvalue="Gradle.BillServicesTest" />
         <item itemvalue="Gradle.UserDaoTest" />
-        <item itemvalue="Gradle.UserDaoTest.insert_update_delete" />
       </list>
     </recent_temporary>
   </component>
@@ -348,38 +384,38 @@
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
     <state x="740" y="296" width="501" height="513" key="FileChooserDialogImpl/71.27.1849.1053@71.27.1849.1053" timestamp="1582636969065" />
-    <state width="1803" height="482" key="GridCell.Tab.0.bottom" timestamp="1582800287583">
+    <state width="1803" height="25" key="GridCell.Tab.0.bottom" timestamp="1582802430122">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="482" key="GridCell.Tab.0.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1582800287583" />
-    <state width="1803" height="482" key="GridCell.Tab.0.center" timestamp="1582800287580">
+    <state width="1803" height="25" key="GridCell.Tab.0.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1582802430122" />
+    <state width="1803" height="25" key="GridCell.Tab.0.center" timestamp="1582802430120">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="482" key="GridCell.Tab.0.center/71.27.1849.1053@71.27.1849.1053" timestamp="1582800287580" />
-    <state width="1803" height="482" key="GridCell.Tab.0.left" timestamp="1582800287578">
+    <state width="1803" height="25" key="GridCell.Tab.0.center/71.27.1849.1053@71.27.1849.1053" timestamp="1582802430120" />
+    <state width="1803" height="25" key="GridCell.Tab.0.left" timestamp="1582802430120">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="482" key="GridCell.Tab.0.left/71.27.1849.1053@71.27.1849.1053" timestamp="1582800287578" />
-    <state width="1803" height="482" key="GridCell.Tab.0.right" timestamp="1582800287582">
+    <state width="1803" height="25" key="GridCell.Tab.0.left/71.27.1849.1053@71.27.1849.1053" timestamp="1582802430120" />
+    <state width="1803" height="25" key="GridCell.Tab.0.right" timestamp="1582802430121">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="482" key="GridCell.Tab.0.right/71.27.1849.1053@71.27.1849.1053" timestamp="1582800287582" />
-    <state width="1803" height="343" key="GridCell.Tab.1.bottom" timestamp="1582738877527">
+    <state width="1803" height="25" key="GridCell.Tab.0.right/71.27.1849.1053@71.27.1849.1053" timestamp="1582802430121" />
+    <state width="1803" height="343" key="GridCell.Tab.1.bottom" timestamp="1582802264862">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="343" key="GridCell.Tab.1.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1582738877527" />
-    <state width="1803" height="343" key="GridCell.Tab.1.center" timestamp="1582738877526">
+    <state width="1803" height="343" key="GridCell.Tab.1.bottom/71.27.1849.1053@71.27.1849.1053" timestamp="1582802264862" />
+    <state width="1803" height="343" key="GridCell.Tab.1.center" timestamp="1582802264858">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="343" key="GridCell.Tab.1.center/71.27.1849.1053@71.27.1849.1053" timestamp="1582738877526" />
-    <state width="1803" height="343" key="GridCell.Tab.1.left" timestamp="1582738877525">
+    <state width="1803" height="343" key="GridCell.Tab.1.center/71.27.1849.1053@71.27.1849.1053" timestamp="1582802264858" />
+    <state width="1803" height="343" key="GridCell.Tab.1.left" timestamp="1582802264856">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="343" key="GridCell.Tab.1.left/71.27.1849.1053@71.27.1849.1053" timestamp="1582738877525" />
-    <state width="1803" height="343" key="GridCell.Tab.1.right" timestamp="1582738877527">
+    <state width="1803" height="343" key="GridCell.Tab.1.left/71.27.1849.1053@71.27.1849.1053" timestamp="1582802264856" />
+    <state width="1803" height="343" key="GridCell.Tab.1.right" timestamp="1582802264860">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
-    <state width="1803" height="343" key="GridCell.Tab.1.right/71.27.1849.1053@71.27.1849.1053" timestamp="1582738877527" />
+    <state width="1803" height="343" key="GridCell.Tab.1.right/71.27.1849.1053@71.27.1849.1053" timestamp="1582802264860" />
     <state x="484" y="187" key="SettingsEditor" timestamp="1582637005102">
       <screen x="71" y="27" width="1849" height="1053" />
     </state>
@@ -407,5 +443,6 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SplitBill$main_kotlin_models_SplitBill.ic" NAME="main.kotlin.models.SplitBill Coverage Results" MODIFIED="1582630748886" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
+    <SUITE FILE_PATH="coverage/SplitBill$Tests_in__SplitBill_test_.ic" NAME="Tests in 'SplitBill.test' Coverage Results" MODIFIED="1582802313269" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

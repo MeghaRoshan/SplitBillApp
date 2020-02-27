@@ -6,7 +6,7 @@ import javax.persistence.*
 @Entity
 @Table(name="bills_table")
 data class Bill (
-    @Id
+    @Id @GeneratedValue
     val billId: Int,
     @Column
     val billName: String,

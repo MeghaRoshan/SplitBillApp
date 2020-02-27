@@ -37,7 +37,7 @@ open class UserServices(var userDao: UserDao) {
     }
 
 
-    fun updateEmail(userId: Int, email: String) {
+    open fun updateEmail(userId: Int, email: String) {
         getUser(userId)?.let{user -> user.email=email }
         userDao.updateUserEmail(userId, email)
     }

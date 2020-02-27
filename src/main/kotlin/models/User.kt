@@ -18,12 +18,12 @@ data class User(
 
 
     var paid: HashMap<Int, Double> = hashMapOf(),
-    @Column
-    var Paid: Double = paid.getValue(userId),
-//    @MapKeyColumn
+//    @Column
+//    var Paid: Double = paid.getValue(userId),
+////    @MapKeyColumn
     var owes: HashMap<Int, Double> = hashMapOf(),
-    @Column
-    var Owes: Double = owes.getValue(userId),
+//    @Column
+//    var Owes: Double = owes.getValue(userId),
     @ManyToOne
     @JoinColumn(name="billId")
     var bill: Bill? = null

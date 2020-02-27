@@ -73,3 +73,4 @@ test {
 dockerCompose {
     useComposeFiles = ['database/docker-compose.yml']
 }
+mainClassName = 'main.kotlin.models.SplitBill'

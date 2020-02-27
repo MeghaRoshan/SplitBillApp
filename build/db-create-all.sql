@@ -11,8 +11,6 @@ create table users_table (
   user_id                       serial not null,
   first_name                    varchar(100) not null,
   email                         varchar(255) not null,
-  paid                          float not null,
-  owes                          float not null,
   billid                        integer,
   constraint uq_users_table_email unique (email),
   constraint pk_users_table primary key (user_id)

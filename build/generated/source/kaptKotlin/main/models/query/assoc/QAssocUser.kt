@@ -1,6 +1,5 @@
 package models.query.assoc;
 
-import io.ebean.typequery.PDouble;
 import io.ebean.typequery.PInteger;
 import io.ebean.typequery.PString;
 import io.ebean.typequery.TQAssocBean;
@@ -23,8 +22,6 @@ class QAssocUser<R> : TQAssocBean<User,R> {
   lateinit var userId: PInteger<R>
   lateinit var firstName: PString<R>
   lateinit var email: PString<R>
-  lateinit var Paid: PDouble<R>
-  lateinit var Owes: PDouble<R>
   lateinit var bill: QAssocBill<R>
 
   /**

@@ -31,43 +31,49 @@ class Test {
         assertEquals(1, testUserServices.getUserList().size)
         assertNotNull(testUserServices.getUser(testUser.userId))
         assertEquals(testUser, testUserServices.getUser(testUser.userId))
-      @Test
-    fun `test bill creation`() {
-        val testBillServices = BillServices(billsDao)
-        assertTrue(testBillServices.getBillsList().isEmpty())
-        val testBill = Bill(1, "lunch",
-            amount = 100.0,
-            payee = User(1, "Megha", "megha@awesome.com")
-        )
-        testBillServices.addBill(testBill)
-        assertEquals(1, testBillServices.getBillsList().size)
-        assertNotNull(testBillServices.getBill(testBill.billId))
-        assertEquals(testBill, testBillServices.getBill(testBill.billId))
+        @Test
+        fun `test bill creation`() {
+            val testBillServices = BillServices(billsDao)
+            assertTrue(testBillServices.getBillsList().isEmpty())
+            val testBill = Bill(
+                1, "lunch",
+                amount = 100.0,
+                payee = User(1, "Megha", "megha@awesome.com")
+            )
+            testBillServices.addBill(testBill)
+            assertEquals(1, testBillServices.getBillsList().size)
+            assertNotNull(testBillServices.getBill(testBill.billId))
+            assertEquals(testBill, testBillServices.getBill(testBill.billId))
+        }
+
+        @Test
+        fun `test delete bill`() {
+            val testBillServices = BillServices(billsDao)
+            assertTrue(testBillServices.getBillsList().isEmpty())
+            val testBill = Bill(
+                1, "lunch",
+                amount = 100.0,
+                payee = User(1, "Megha", "megha@awesome.com")
+            )
+            testBillServices.addBill(testBill)
+            testBillServices.deleteBill(1)
+            assertEquals(0, testBillServices.getBillsList().size)
+        }
+
+        @Test
+        fun `test delete user`() {
+            val testUserServices = UserServices(userDao)
+            assertTrue(testUserServices.getUserList().isEmpty())
+            val testUser = User(1, "Megha", "megha@awesome.com")
+            testUserServices.addUser(testUser)
+            testUserServices.deleteUser(1)
+            assertEquals(0, testUserServices.getUserList().size)
+        }
+
+        @Test
+        fun `test create user route`() {
+            val userController = UserController(userServices)
+            assertEquals(2, userController.getUserList().size)
+        }
     }
-    @Test
-    fun `test delete bill`(){
-        val testBillServices = BillServices(billsDao)
-        assertTrue(testBillServices.getBillsList().isEmpty())
-        val testBill = Bill(1, "lunch",
-            amount = 100.0,
-            payee = User(1, "Megha", "megha@awesome.com")
-        )
-        testBillServices.addBill(testBill)
-        testBillServices.deleteBill(1)
-        assertEquals(0, testBillServices.getBillsList().size)
-    }
-    @Test
-    fun `test delete user`(){
-        val testUserServices = UserServices(userDao)
-        assertTrue(testUserServices.getUserList().isEmpty())
-        val testUser = User(1, "Megha", "megha@awesome.com")
-        testUserServices.addUser(testUser)
-        testUserServices.deleteUser(1)
-        assertEquals(0, testUserServices.getUserList().size)
-    }
-    @Test
-    fun `test create user route`(){
-        val userController = UserController(userServices)
-        assertEquals(2, userController.getUserList().size)
-    }
-    }}
+}
