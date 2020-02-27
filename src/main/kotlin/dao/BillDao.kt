@@ -7,7 +7,7 @@ import main.kotlin.models.models.query.QBill
 import models.User
 import models.query.QUser
 
-class BillDao(var database: Database) {
+open class BillDao(var database: Database) {
 
     open fun addBill(bill: Bill):Bill{
         database.save(bill)

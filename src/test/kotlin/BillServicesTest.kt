@@ -35,5 +35,18 @@ open class BillServicesTest {
         assertEquals(testBill, bill)
 
     }
+    fun `update amount test`() {
+        var user = User(1, "Megha", "megha@awesome.com")
+        val testBill = Bill(1, "lunch123", amount = 4000.0, payee = user)
+        Mockito.`when`(mockBillDao.updateBillAmount(1, 5000.0)).thenAnswer {
+            return@thenAnswer testBill.apply {
+                amount = 5000.0
+            }
+        }
+        testBillServices.updateBill(1, 5000.0)
+        assertEquals(5000.0, testBill.amount)
+    }
+
+
 
 }

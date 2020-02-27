@@ -15,7 +15,7 @@ open class UserServices(var userDao: UserDao) {
 
 
     fun addUser(user: User): User {
-//        userList.add(user)
+        userList.add(user)
         return userDao.userDaoAdd(user)
     }
 
@@ -37,7 +37,7 @@ open class UserServices(var userDao: UserDao) {
 
 
     fun updateEmail(userId: Int, email: String) {
-        //getUser(userId)?.let{user -> user.email=email }
+        getUser(userId)?.let{user -> user.email=email }
         userDao.updateUserEmail(userId, email)
     }
 

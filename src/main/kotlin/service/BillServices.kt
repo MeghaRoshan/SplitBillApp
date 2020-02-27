@@ -4,7 +4,7 @@ import dao.BillDao
 import main.kotlin.models.models.Bill
 import models.User
 
-class BillServices(var billDao: BillDao) {
+open class BillServices(var billDao: BillDao) {
     private val userList = mutableListOf<User>()
     private val billsList = mutableListOf<Bill>()
     private val deletedBillsList= mutableListOf<Bill>()
