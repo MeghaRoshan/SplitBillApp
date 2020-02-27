@@ -38,13 +38,13 @@ class UserController(val userServices: UserServices) {
         return userServices.getUserList()
     }
 
-    var user=User(3, "janice", "janiceroshan@gmail.com")
-    val user3= User(4, "maria","mariaroshan@gmail.com")
-    @GET
-    @Path("/settlePayment/{amount}")
-    fun settlePayment(@PathParam("amount") amount: Double, user1: User, user2:User){
-        userServices.settlePayment(user1, user2, amount)
-    }
+//    var user=User(3, "janice", "janiceroshan@gmail.com")
+//    val user3= User(4, "maria","mariaroshan@gmail.com")
+//    @GET
+//    @Path("/settlePayment/{amount}")
+//    fun settlePayment(@PathParam("amount") amount: Double, user1: User, user2:User){
+//        userServices.settlePayment(user1, user2, amount)
+//    }
 //
 //    val list= getUserList()
 //    val user3= User(4, "maria","mariaroshan@gmail.com")

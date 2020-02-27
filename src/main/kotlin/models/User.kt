@@ -14,10 +14,16 @@ data class User(
     var userId: Int,
     @Length(100) var firstName: String,
     @Column(unique = true) var email: String,
-    @MapKeyColumn
+//    @MapKeyColumn
+
+
     var paid: HashMap<Int, Double> = hashMapOf(),
-    @MapKeyColumn
+    @Column
+    var Paid: Double = paid.getValue(userId),
+//    @MapKeyColumn
     var owes: HashMap<Int, Double> = hashMapOf(),
+    @Column
+    var Owes: Double = owes.getValue(userId),
     @ManyToOne
     @JoinColumn(name="billId")
     var bill: Bill? = null
@@ -32,5 +38,10 @@ data class User(
 //        @Column
 //        lateinit var owes: String
 //        HashMap<Int, Double> = hashMapOf()
+//    fun convert(){for(key in paid.keys){
+//        println("Element at key $key : ${paid.get(userId)}")
+//    }
+
+
 
 }

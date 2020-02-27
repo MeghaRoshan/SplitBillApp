@@ -5,6 +5,7 @@ import models.User
 import main.kotlin.models.models.Bill
 
 
+
 open class UserServices(var userDao: UserDao) {
 
     private val userList = mutableListOf<User>()
@@ -45,6 +46,7 @@ open class UserServices(var userDao: UserDao) {
     fun deleteUser(userId: Int) {
         userList.remove(getUser(userId))
     }
+
 
     // endregion
 
